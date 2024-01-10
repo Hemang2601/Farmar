@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer's Hub - Registered Demands</title>
+    <link rel="stylesheet" href="them.css">
+    <!-- Add your CSS file link here -->
+    <script>
+        document.addEventListener('keydown', function (e) {
+            // Disable the ability to view source code using keyboard shortcuts
+            if (e.ctrlKey && (e.keyCode == 85 || e.keyCode == 83 || e.keyCode == 73)) {
+                e.preventDefault();
+                alert('Code viewing is disabled on this page.');
+            }
+
+            // Disable the ability to right-click and inspect elements
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                e.preventDefault();
+                alert('Code viewing is disabled on this page.');
+            }
+        });
+        
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            alert('Right-clicking is disabled on this page.');
+        });
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://cdn1.vectorstock.com/i/1000x1000/51/95/indian-farmer-vector-21895195.jpg" alt="Farmers Logo" class="logo-img">
+            <h1>Farmer's Hub</h1>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Farmers</a>
+        <a href="buy.html" class="nav-link">Buy</a>
+        <a href="sell.html" class="nav-link">Sell</a>
+        <a href="news.html" class="nav-link">Current News</a>
+        <a href="signup.html" class="nav-link">Signup</a>
+    </nav>
+
+    <div class="container">
+        <section class="main">
+            <div class="section-title">Registered Demands</div>
+
+           
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; [current year] Farmer's Hub</p>
+    </footer>
+</body>
+
+</html>

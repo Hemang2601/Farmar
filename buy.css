@@ -1,0 +1,57 @@
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}/* Button styles specific to the buy page */
+.btn {
+    background-color: #3498DB;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #297FB8;
+}
+
+.buy-btn {
+    background-color: #2ECC71;
+}
+
+.buy-btn:hover {
+    background-color: #27AE60;
+}
+
+.sell-btn {
+    background-color: #E74C3C;
+}
+
+.sell-btn:hover {
+    background-color: #C0392B;
+}
+
+.btn .icon {
+    margin-right: 10px;
+}
+
+/* You can add more specific styles for other elements on the buy page if needed */

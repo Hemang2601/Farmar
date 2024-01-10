@@ -1,0 +1,80 @@
+/* Styles for the main section */
+.main1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+/* Styles for the product registration section */
+.product-registration {
+    background-color: rgba(255 , 255 ,255 , 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    color: black;
+    /* Add these styles for centering the form */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #065386;
+}
+
+form {
+    width: 100%; /* Ensure the form takes the full width */
+    max-width: 400px; /* Adjust the max-width as needed */
+}
+
+
+label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: black;
+    text-align: left;
+}
+
+input,
+textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #3498DB;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #27AE60; /* Highlight color on focus */
+}
+
+button {
+    background-color: #27AE60;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #219653;
+}

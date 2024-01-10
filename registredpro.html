@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer's Hub - Manage Registered Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="them.css">
+    <link rel="stylesheet" href="registredpro.css">
+    <script>
+        document.addEventListener('keydown', function (e) {
+            // Disable the ability to view source code using keyboard shortcuts
+            if (e.ctrlKey && (e.keyCode == 85 || e.keyCode == 83 || e.keyCode == 73)) {
+                e.preventDefault();
+                alert('Code viewing is disabled on this page.');
+            }
+    
+            // Disable the ability to right-click and inspect elements
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                e.preventDefault();
+                alert('Code viewing is disabled on this page.');
+            }
+        });
+        
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            alert('Right-clicking is disabled on this page.');
+        });
+    </script>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://cdn1.vectorstock.com/i/1000x1000/51/95/indian-farmer-vector-21895195.jpg" alt="Farmers Logo" class="logo-img">
+            <h1>Farmer's Hub</h1>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Farmers</a>
+        <a href="buy.html" class="nav-link">Buy</a>
+        <a href="sell.html" class="nav-link">Sell</a>
+        <a href="news.html" class="nav-link">Current News</a>
+        <a href="signup.html" class="nav-link">Signup</a>
+    </nav>
+
+    <div class="container">
+        <section class="main">
+            <div class="section-title">Manage Registered Products</div>
+
+            <div class="card">
+                <h2>Product 1</h2>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Price: $20.00</p>
+                <div class="btn-container">
+                    <button class="btn edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                    <button class="btn delete-btn"><i class="fas fa-trash-alt"></i> Delete</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Product 2</h2>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Price: $30.00</p>
+                <div class="btn-container">
+                    <button class="btn edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                    <button class="btn delete-btn"><i class="fas fa-trash-alt"></i> Delete</button>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="main">
+            <div class="section-title">Manage Your Registered Products</div>
+            <p class="info-text">Here, you can view and manage the products you have already registered for selling. Make changes or remove products as needed.</p>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy;  Farmer's Hub</p>
+    </footer>
+</body>
+</html>

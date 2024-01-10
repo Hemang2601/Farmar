@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer's Hub</title>
+    <link rel="stylesheet" href="them.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <!-- Other head elements -->
+    <script>
+        document.addEventListener('keydown', function (e) {
+            // Disable the ability to view source code using keyboard shortcuts
+            if (e.ctrlKey && (e.keyCode == 85 || e.keyCode == 83 || e.keyCode == 73)) {
+                e.preventDefault();
+                alert('Code viewing is disabled on this page.');
+            }
+
+            // Disable the ability to right-click and inspect elements
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                e.preventDefault();
+                alert('Code viewing is disabled on this page.');
+            }
+        });
+        
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            alert('Right-clicking is disabled on this page.');
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://cdn1.vectorstock.com/i/1000x1000/51/95/indian-farmer-vector-21895195.jpg" alt="Farmers Logo" class="logo-img">
+            <h1>Farmer's Hub</h1>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html" class="nav-link"><i class="fas fa-users"></i> About Farmers</a>
+        <a href="dashboard.html" class="nav-link"><i class="fas fa-tachometer-alt"></i> Market</a>
+        <a href="buy.html" class="nav-link"><i class="fas fa-shopping-cart"></i> Buy</a>
+        <a href="sell.html" class="nav-link"><i class="fas fa-handshake"></i> Sell</a>
+        <a href="news.html" class="nav-link"><i class="fas fa-newspaper"></i> Current News</a>
+        <a href="signup.html" class="nav-link"><i class="fas fa-user-plus"></i> Signup</a>
+    </nav>
+
+    <div class="container">
+        <section class="main">
+            <div class="info-section">
+                <h2 class="info-title">Government Services for Indian Farmers</h2>
+                <p class="info-text">Status: Full-service support from the Indian government</p>
+                <p class="info-text">The government provides a range of services and support to farmers, including financial assistance, subsidies, and advisory services. Stay informed about the latest government initiatives to benefit from these services.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; Farmer's Hub</p>
+    </footer>
+</body>
+</html>

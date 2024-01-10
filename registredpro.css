@@ -1,0 +1,58 @@
+/* Add this CSS to your registredpro.css file */
+.card {
+    display: block; /* Ensure each card appears on a new line */
+    border: 1px solid black; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+    padding: 20px; /* Padding inside the card */
+    margin-bottom: 20px; /* Spacing between cards */
+    background-color: black; /* Card background color */
+}
+
+.card h2 {
+    font-size: 18px; /* Heading font size */
+    margin-bottom: 10px; /* Spacing below the heading */
+}
+
+.card p {
+    font-size: 14px; /* Paragraph font size */
+    margin-bottom: 15px; /* Spacing below paragraphs */
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 15px; /* Padding inside the button */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.edit-btn {
+    background-color: #3498DB; /* Button background color */
+    color: #fff; /* Button text color */
+}
+
+.delete-btn {
+    background-color: #E74C3C; /* Button background color */
+    color: #fff; /* Button text color */
+}
+
+.btn:hover {
+    filter: brightness(90%); /* Slightly reduce brightness on hover */
+}
+
+.section-title {
+    font-size: 24px; /* Section title font size */
+    font-weight: bold;
+    margin-bottom: 20px; /* Spacing below section title */
+}
+
+.info-text {
+    font-size: 16px; /* Information text font size */
+    margin-bottom: 20px; /* Spacing below information text */
+}
