@@ -10,17 +10,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
      
     <script>
-        document.addEventListener('keydown', function (e) {
-            if (e.ctrlKey && (e.keyCode == 85 || e.keyCode == 83 || e.keyCode == 73)) {
+        
+        
+            // Disable context menu (right-click)
+            document.addEventListener('contextmenu', function (e) {
                 e.preventDefault();
-                alert('Code viewing is disabled on this page.');
-            }
-
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                alert('Right-clicking is disabled on this page.');
+            });
+    
+            // Disable copying the URL
+            document.addEventListener('copy', function (e) {
                 e.preventDefault();
-                alert('Code viewing is disabled on this page.');
-            }
-        });
+                alert('Copying the URL is disabled on this page.');
+            });
+    
+            // Disable viewing page source
+            document.addEventListener('keydown', function (e) {
+                if (e.ctrlKey && (e.keyCode == 85 || e.keyCode == 83 || e.keyCode == 73)) {
+                    e.preventDefault();
+                    alert('Code viewing is disabled on this page.');
+                }
+    
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                    e.preventDefault();
+                    alert('Code viewing is disabled on this page.');
+                }
+            });
         
         document.addEventListener('contextmenu', function (e) {
             e.preventDefault();
